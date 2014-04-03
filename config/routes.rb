@@ -7,6 +7,8 @@ Edm::Application.routes.draw do
 
   get "edm_sucess" => "edm#edm_sucess"
 
+  get "edm_sample" => "edm#edm_sample"
+
   match "video" => "video#video"
 
   # The priority is based upon order of creation:
@@ -58,7 +60,7 @@ Edm::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  #root :to => 'edm#hello'
+  root :to => 'edm#hello'
 
   # See how all your routes lay out with "rake routes"
 

@@ -7,6 +7,8 @@ set :repo_url, 'https://github.com/wangzifeng/bluehive_edm.git'
 # Default branch is :master
 #ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
+set :branch, 'before_cap'
+
 # Default deploy_to directory is /var/www/my_app
 set :deploy_to, '/var/www/bluehive'
 

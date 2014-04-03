@@ -11,4 +11,8 @@ class EdmController < ApplicationController
 	def edm_sucess
 		@sucess = "Thanks for sending edm"
 	end
+
+	def edm_sample
+		
+	end
 end
