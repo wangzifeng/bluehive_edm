@@ -1,7 +1,7 @@
 class YourMailer < ActionMailer::Base
   def edm
-    mail :subject => "Test",
-         :to      => ["frank.wang@thebluehive.com","176562978@qq.com"],
+    mail :subject => "BrightCove Test Email",
+         :to      => ["frank.wang@thebluehive.com"],
          :from    => "frank.wang@thebluehive.com",
          :template_name => 'edm',
          :template_path => 'yourmailer'
