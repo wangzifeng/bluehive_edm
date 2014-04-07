@@ -1,6 +1,8 @@
 Edm::Application.routes.draw do
   #get "edm/hello"
 
+  resources :users
+
   match "edm" => "edm#hello"
 
   match "edm/send" => "edm#edm_send"

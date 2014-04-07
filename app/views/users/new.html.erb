@@ -1,0 +1,17 @@
+<h1>Sign Up</h1>
+
+<%= render 'shared/error'%>
+
+<%= form_for(@user) do |f|%>
+	<%= f.label :email %>
+	<%= f.text_field :email %>
+	</br>
+	<%= f.label :email_confirm %>
+	<%= f.text_field :email_confirm %>
+		</br>
+	<%= f.label :password %>
+	<%= f.password_field :password %>
+		</br>
+
+	<%= f.submit :submit, class: "button-cta pure-button" %>
+<% end %>

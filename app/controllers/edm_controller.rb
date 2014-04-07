@@ -1,15 +1,17 @@
 class EdmController < ApplicationController
 	def hello
-		test = 'test'
+
 	end
 
 	def edm_send
-		YourMailer.edm.deliver
-		redirect_to action: 'edm_sucess'
+		session['tmp_email'] = params['email']
+		YourMailer.edm(session['tmp_email']).deliver
+		redirect_to edm_sucess_path
 	end 
 
 	def edm_sucess
-		@sucess = "Thanks for sending edm"
+		@receiver = session['tmp_email']
+		session['tmp_email'] = nil
 	end
 
 	def edm_sample

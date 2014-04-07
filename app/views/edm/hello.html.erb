@@ -1,5 +1,9 @@
 <h1>Send EDM</h1>
 
+<%= form_tag(edm_send_path, {class: 'pure-form'}) do %>
 
-<%= link_to "Send", edm_send_path, class: 'button-cta pure-button' %>
+<p><%= email_field_tag 'email', nil , placeholder: 'Enter email address', size: 35, class: 'pure-input' %></p>
 
+<%= submit_tag 'SEND!', class: 'button-cta pure-button' %>
+
+<% end %>
